@@ -1,0 +1,23 @@
+body{
+    background: #333333;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+.navigation{
+    background: #010101;
+}
+.nav-link{
+    font-size: 20px;
+    color: white;
+}
+.target{
+    background: #010101;
+}
+.map-container{
+    background: white;
+    color: black;
+}
+.leaflet{
+    height: 500px;
+}

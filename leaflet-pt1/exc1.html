@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cent Focs</title>
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!--leaflet-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""/>
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">    
+    <!--css-->
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    
+        <!------navbar---------->
+        
+            <nav class="navbar navbar-expand-lg navigation">
+                <div class="container">
+                    <a class="navbar-brand font-weight-bold text-light" href="#">Cent Focs</a>
+                                    
+                    <div class="navbar" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class=" nav-item px-3">
+                                <a class="nav-link" href="#">Carta</a>
+                            </li>
+                            <li class="nav-item px-3">
+                                <a class="nav-link" href="#">Menús</a>
+                            </li>
+                            <li class="nav-item px-3">
+                                <a class="nav-link" href="#">Reservas</a>
+                            </li>
+                            <li class="nav-item px-3">
+                                <a class="nav-link" href="#">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>    
+            </nav>
+         
+        <!-------page content---------->
+        
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 mt-4">
+                            <h2 class= "h1 font-weight-bold">Platos del día</h2>
+                            <p class="text-muted">Ingredientes frescos y de proximidad. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quibusdam voluptates perferendis voluptate, voluptatem sed quasi id atque, quaerat, rerum ipsa autem repellat earum facilis vel cum molestiae quae. Ullam.</p>
+                        </div>
+                        <div class="col-6 mt-5">
+                                            
+                                <!--images-->
+                                <div class= "mt-6">
+                                    <img src="./img/img01.jpg" class="img-fluid img-meal" alt="un huevo frito">
+                                
+                                    <div class= "target">
+                                        <h5 class="p-3 font-weight-bold">Desayunos</h5>
+                                        <p class= "text-muted px-2 pb-3">Ricos huevos.</p>
+                                    </div>
+                                </div>
+                        </div> 
+                        <div class="col-6 mt-5">        
+                                <div class= "mt-6">
+                                    <img src="./img/img2.jpg" class="img-fluid img-meal" alt="una pizza">
+                                
+                                    <div class= "target">
+                                        <h5 class="p-3 font-weight-bold">Pizza</h5>
+                                        <p class= "text-muted px-2 pb-3">Masas elaboradas a diario.</p>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="col-12 mt-5">
+                            <!--images-->
+                            <div >
+                                <img src="./img/img1.jpg" class="img-fluid" alt="cocineros">
+                            
+                                <div class= "target">
+                                    <h5 class="p-3 font-weight-bold">Elaboración diaria.</h5>
+                                    <p class= "text-muted px-2 pb-3">Nuestros chefs cocinan muy bien.</p>
+                                </div>
+                            </div>
+                        </div>     
+                    </div>
+                </div>
+            </section>
+        
+        
+        <!-----------Map--------------->
+
+            <section class= " map-container mt-5">
+                <div class="container py-5">
+                    <h2 class="pt-4">Dónde estamos</h2>
+                    <p>Nos encontrarás en el centro de Barcelona.</p>
+                    <div class="row">
+                        <div class="col leaflet" id="leaflet">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+    
+   
+    
+
+    <!--bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <!--leaflet-->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    <!--js-->
+    <script src="js/script.js" ></script>    
+</body>
+</html>
