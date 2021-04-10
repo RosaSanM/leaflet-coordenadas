@@ -29,7 +29,7 @@ function onMapClick(e) {
             map.removeLayer(marker);
         }
         marker = L.marker([e.latlng.lat.toString(),e.latlng.lng.toString()], {icon: myIcon}).addTo(map);
-        map = setView([e.latlng.lat.toString(),e.latlng.lng.toString()]);
+        map.setView([e.latlng.lat.toString(),e.latlng.lng.toString()], 19);
         
 }
 
